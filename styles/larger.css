@@ -1,0 +1,39 @@
+@media screen and (min-width: 750px) {
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        font-family: 'Julius Sans One', sans-serif;
+        margin: 0;
+        padding: 50px;
+        justify-items: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 50px 1fr;
+    }
+
+    main h2 {
+        grid-row: 1;
+    }
+
+    .card {
+        grid-row: 2;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+}
