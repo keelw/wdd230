@@ -8,6 +8,16 @@
         flex: 1 1 100%;
     }
 
+    .navigation {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navigation li {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
     footer {
         display: flex;
         justify-content: space-around;
@@ -35,5 +45,9 @@
         grid-row: 2;
         margin-left: 10px;
         margin-top: 20px;
+    }
+
+    #menu {
+        display: none;
     }
 }

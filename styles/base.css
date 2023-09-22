@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Julius+Sans+One&display=swap');
+
+
 header {
     display: grid;
     grid-template-columns: 150px auto;
@@ -19,24 +21,21 @@ body {
     margin-left: 20px;
 }
 
+#mode {
+    position: absolute;
+    top: .9rem;
+    right: 4rem;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+main {
+    margin: 0 auto;
+}
+
 nav {
     margin: 0 auto;
     justify-content:space-evenly;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    font-family: 'Julius Sans One', sans-serif;
-    color: black;
-    text-decoration: none;
 }
 
 nav a:hover {
@@ -45,11 +44,78 @@ nav a:hover {
     color: white;
 }
 
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid;
+    position: absolute;
+    padding: 10px;
+    top: 1rem;
+    right: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Julius Sans One', sans-serif;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li:hover {
+    text-decoration: underline;
+    color: white;
+    background-color: navy;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✖";
+}
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "📍 ";
+}
+
+.active {
+	background-color: blue;
+}
+
 h2 {
     font-family: 'Julius Sans One', sans-serif;
     color: navy;
     text-align: left;
-    padding-left: 5px;
+    padding: 20px;
+    margin: 0 auto;
 }
 
 .card {
@@ -60,7 +126,7 @@ h2 {
     margin-left: 4em;
     margin-right: 4rem;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
 .card h3 {
