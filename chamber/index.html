@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>City of Herriman Chamber of Commerce</title>
+        <meta name="description" content="This is the home page of the practice website for the 
+            City of Herriman Chamber of Commerce. This is also an assignment for WDD 230.">
+        <meta name="author" content="William Keel">
+
+        <!--Import fonts from Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Serif+Georgian&display=swap" rel="stylesheet"> 
+
+        <!--Twitter and Facebook meta tags for image previews-->
+        <meta property="og:title" content="City of Herriman Chamber of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Home Page for Herriman Chamber of Commerce">
+        <meta property="og:image" content="https://www.herriman.org/uploads/files/1437/xlarge/YUN0013.jpg">
+        <meta property="og:url" content="https://keelw.github.io/wdd230/chamber/index.html">
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <!--Sylesheets-->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        
+        <!--Favicon-->
+        <link rel="icon" src="images/favicon.ico">
+    </head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.jpg" alt="Herriman Chamber of Commerce Logo">
+        <nav>
+            <button id="menu">
+            </button>
+            <ul class="navigation">
+                <li><a class="nav-link" href="home.html">Home</a></li>
+                <li><a class="nav-link" href="discover.html">Discover</a></li>
+                <li><a class="nav-link" href="directory.html">Directory</a></li>
+                <li><a class="nav-link" href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero-section">
+            <img id="hero-img" src="images/herriman.jpg" alt="Herriman City">
+            <div class="button-box">
+                <a class="join" href="join.html">Join Us</a>
+            </div>
+        </section>
+        <section class="card" id="current-events">
+            <h2>Events</h2>
+            <p>Events placeholder...</p>
+        </section>
+        <section class="card" id="weather">
+            <h2>Weather</h2>
+            <p>Weather placeholder...</p>
+        </section>
+        <section class="card" id="spotlights">
+            <h2>Member Spotlights</h2>
+            <p>Member spotlights placeholder...</p>
+        </section>
+    </main>
+    <footer>
+        <img class="logo" src="images/logo.jpg" alt="Herriman Chamber of Commerce Logo">
+        <div id="contact-info">
+            <p>info@herriman-chamber.org</p>
+            <p>+1 (555) 8910-9099</p>
+        </div>
+        <div id="project-info">
+            <p id="copyRight"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+@media screen and (min-width: 750px) {
+
+    .navigation {
+        flex-direction: row;
+        font-family: 'Montserrat', sans-serif;
+        width: 100%;
+    }
+
+    .navigation li {
+        display: flex;
+        flex: 1 1 100%;
+        width: 100%;
+    }
+    
+    .nav-link {
+        color: white;
+        width: 100%;
+        text-decoration: none;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+    
+    nav {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
