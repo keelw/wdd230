@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <meta author="Will Keel">
+    <meta description="Practicing responsive image use">
+</head>
+<body>
+    <main>
+        <div id="hero">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+                <img src="images/hero-large.webp" alt="Panama City Temple" width="2" height="1">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>
