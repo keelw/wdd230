@@ -7,25 +7,6 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-// Get the stored value of the visits key in local storage
-// if it does not exist, create it and assign 0.
-let numVisits = Number(window.localStorage.getItem("numBisits-ls")) || 0;
-
-// Determine if this is the first visit or display the number of visits
-if (numVisits !== 0) {
-    visitsDisplay.textContent = numVisits;
-}
-
-else {
-    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
-}
-
-// Make sure to increment the number by 1
-numVisits++;
-
-// Store the new visit total into localSotrage
-localStorage.setItem("numVisits-ls", numVisits);
-
 const modeButton = document.querySelector("#mode");
 const main = document.querySelector("main");
 const header = document.querySelector("header");
@@ -76,3 +57,22 @@ modeButton.addEventListener("click", () => {
 		modeButton.textContent = "☑️";
 	}
 });
+
+// Get the stored value of the visits key in local storage
+// if it does not exist, create it and assign 0.
+let numVisits = Number(window.localStorage.getItem("numBisits-ls")) || 0;
+
+// Determine if this is the first visit or display the number of visits
+if (numVisits !== 0) {
+    visitsDisplay.textContent = numVisits;
+}
+
+else {
+    visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
+}
+
+// Make sure to increment the number by 1
+numVisits++;
+
+// Store the new visit total into localSotrage
+localStorage.setItem("numVisits-ls", numVisits);
