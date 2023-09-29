@@ -60,7 +60,7 @@ modeButton.addEventListener("click", () => {
 
 // Get the stored value of the visits key in local storage
 // if it does not exist, create it and assign 0.
-let numVisits = Number(window.localStorage.getItem("numBisits-ls")) || 0;
+let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
 // Determine if this is the first visit or display the number of visits
 if (numVisits !== 0) {
