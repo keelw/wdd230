@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Julius+Sans+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 header {
     display: grid;
@@ -172,4 +172,47 @@ footer {
     flex-direction: column;
     justify-items: center;
     align-items: center;
+}
+
+#hero {
+    display: block;
+    position: relative;
+}
+
+#hero img {
+    width: 100%;
+}
+
+.herolabel {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: radial-gradient(#fff, #68926f);
+    border: 1px solid;
+    padding: 1.5rem;
+    opacity: 0.70;
+}
+
+.herolabel p {
+    margin: 0;
+    padding: .25rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: "Great Vibes", serif;
+}
+
+#information {
+    text-align: center;
+}
+
+.label {
+    padding: 30px;
+}
+
+#map {
+    width: 100%;
+}
+
+.map {
+    width: 100%;
 }

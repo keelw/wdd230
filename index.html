@@ -25,7 +25,7 @@
 </head>
 <body>
     <header>
-        <img id="me" src="images/personal_headshot.jpg" alt="William Keel">
+        <img id="me" src="images/personal_headshot.webp" alt="William Keel">
         <h1>William keel</h1>
         <div id="mode">
             ☑️
@@ -48,6 +48,15 @@
            </li>
         </ul>
     </nav>
+    <section id="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <img src="images/hero-large.webp" alt="Photo of Panama City, Panama Temple">
+        </picture>
+        <div class="herolabel">
+            <p>Panama City, Panama Temple</p>
+        </div>
+    </section>
     <main>
         <h2>WDD 230: Web Frontend Development</h2>
         <section class="card">
@@ -78,11 +87,14 @@
                 </li>
             </ul>
         </section>
-        <section class="card">
+        <section class="card" id="information">
             <h3>Information</h3>
-            <p></p>
+            <p><span class="label">Number of Visits: </span><span id="visits"></span></p>
         </section>
     </main>
+    <div id="map">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48544.36069882284!2d-112.07100150988357!3d40.496884535023916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752837ff975dc3d%3A0xb23dcb217417201e!2sHerriman%2C%20UT%2084096!5e0!3m2!1sen!2sus!4v1695950277691!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
     <footer>
         <p id="copyRight"></p>
         <p id="lastModified"></p>

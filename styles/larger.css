@@ -50,4 +50,33 @@
     #menu {
         display: none;
     }
+
+    #hero {
+        display: block;
+        max-width: 1200px;
+        position: relative;
+    }
+    
+    #hero img {
+        width: 100%;
+    }
+    
+    .herolabel {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background: radial-gradient(#fff, #68926f);
+        border: 1px solid;
+        padding: 1.5rem;
+        opacity: 0.70;
+    }
+    
+    .herolabel p {
+        margin: 0;
+        padding: .25rem;
+        font-weight: 700;
+        font-size: 2rem;
+        font-family: "Great Vibes", serif;
+    }
+
 }
