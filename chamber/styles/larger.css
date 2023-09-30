@@ -21,6 +21,7 @@
     }
     
     .nav-link:hover {
+        
         text-decoration: underline;
     }
     
@@ -44,4 +45,9 @@
     footer {
         flex-direction: column;
     }
+}
+
+/*This is for the discover page*/
+.discover-img:hover {
+    box-shadow: 0 0 50px #333;
 }

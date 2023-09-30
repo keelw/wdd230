@@ -121,6 +121,8 @@ h2 {
 
 p {
     padding: 10px;
+    font-family: 'Noto Serif Georgian', serif;
+
 }
 
 .card {
@@ -150,4 +152,22 @@ footer {
     background: black;
     width: 100%;
     margin: 15px;
+}
+
+
+/*This is for the discover page*/
+.discover-img {
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    border-radius: 15px;
+} 
+
+#photos {
+    padding: 30px;
+}
+
+#photos p {
+    background-color: #eaeaea;
+    margin-top: 0;
 }
