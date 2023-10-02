@@ -1,0 +1,45 @@
+:root {
+    --back: #000;
+    --back2: #3D3D3D;
+    --border: #bebebe;
+    --zebra: #eee;
+}
+
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back2);
+    font-size: .95rem;
+}
+
+th {
+    font-weight: 750;
+}
+
+th, td {
+    padding: 7px 15px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: var(--zebra);
+}
+
+tbody tr, td {
+    border: solid 1px var(--border);
+}
+
+thead > tr {
+    background-color: black;
+    color: white
+}
