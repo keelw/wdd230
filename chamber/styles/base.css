@@ -289,7 +289,7 @@ form input.submitBtn {
     border-radius: 1rem;
     padding: .75rem 1.5rem;
     margin: 0 0 2rem 2%;
-    width: 96%;
+    width: 80%;
     max-width: 20rem;
 }
 
@@ -303,4 +303,34 @@ form label.top input:required {
 
 form label.top input:required:valid {
     border-left: green solid 6px;
+}
+
+/*-------------Thank You Page-------------*/
+.return {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+.thankyou p {
+    padding: 100px;
+}
+
+.return button {
+    padding: 40px;
+}
+
+.button-box-return {
+    border: none;
+    background-color: #9c2c13;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 100px;
+    max-width: 20rem;
+}
+
+.button-box-return:hover {
+    background-color: #001F3F;
 }
