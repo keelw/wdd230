@@ -1,6 +1,7 @@
 const hamButton = document.querySelector('#menu');
 const navigation = document.querySelector('.navigation');
 const visitsMessage = document.querySelector('#visit-message');
+const timestamp = document.querySelector('#timestamp-field');
 
 hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
@@ -58,3 +59,4 @@ else {
 	localStorage.setItem("lastVisit-ls", today);	
 }
 
+timestamp = d;

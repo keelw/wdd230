@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>City of Herriman Chamber of Commerce</title>
+        <meta name="description" content="This is the home page of the practice website for the 
+            City of Herriman Chamber of Commerce. This is also an assignment for WDD 230.">
+        <meta name="author" content="William Keel">
+
+        <!--Import fonts from Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Serif+Georgian&display=swap" rel="stylesheet"> 
+
+        <!--Twitter and Facebook meta tags for image previews-->
+        <meta property="og:title" content="City of Herriman Chamber of Commerce">
+        <meta property="og:type" content="website">
+        <meta property="og:description" content="Home Page for Herriman Chamber of Commerce">
+        <meta property="og:image" content="https://www.herriman.org/uploads/files/1437/xlarge/YUN0013.jpg">
+        <meta property="og:url" content="https://keelw.github.io/wdd230/chamber/index.html">
+        <meta name="twitter:card" content="summary_large_image">
+    
+        <!--Sylesheets-->
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link rel="stylesheet" href="styles/base.css">
+        <link rel="stylesheet" href="styles/larger.css">
+        
+        <!--Favicon-->
+        <link rel="icon" href="images/favicon.ico">
+    </head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.jpg" alt="Herriman Chamber of Commerce Logo">
+        <nav>
+            <button id="menu">
+            </button>
+            <ul class="navigation">
+                <li><a class="nav-link" href="index.html">Home</a></li>
+                <li><a class="nav-link" href="discover.html">Discover</a></li>
+                <li><a class="nav-link" href="directory.html">Directory</a></li>
+                <li><a class="nav-link" href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join-main">
+        <h1>Join the Herriman Chamber of Commerce</h1>
+        <section class="sidebar">
+            <section class="card">
+                <h2>Bronze Membership</h2>
+                <ul>
+                    <li>Special Events Access</li>
+                    <li>Training Events Access (Paid)</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Silver Membership</h2>
+                <ul>
+                    <li>Special Events Access</li>
+                    <li>Training Events Access (Paid)</li>
+                    <li>Event Discounts</li>
+                    <li>Mayoral Spotlights</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>Gold Membership</h2>
+                <ul>
+                    <li>Special Events Access</li>
+                    <li>Training Events Access (Free)</li>
+                    <li>Event Discounts</li>
+                    <li>Mayoral Spotlights</li>
+                    <li>Chamber Endorsements</li>
+                </ul>
+            </section>
+            <section class="card">
+                <h2>NP Membership (NP ONLY. NO FEE)</h2>
+                <ul>
+                    <li>All benefits of the Gold Membership included</li>
+                </ul>
+            </section>
+        </section>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required id="fname"></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required id="lname"></label>
+                    <label class="top">Title/Position <input type="text" name="title" id="title" pattern="[a-zA-Z\- ]{7,}"></label>
+                    <label class="top">Email Address* <input type="email" name="email" id="title" required placeholder="someone@email.com"></label>
+                    <label class="top">Phone Number* <input type="tel" name="tel" id="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Organization Information</legend>
+                    <label class="top">Business/Organization Name* <input type="text" name="org" required id="orgName"></label>
+                    <div>Membership Level</div>
+                        <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership (NP ONLY. NO FEE)</label>
+                        <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                        <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                        <label class="top"><input type="textarea" name="description" id="description">Organization Description</label>
+                        <label><input type="hidden" name="timestamp" id="timestamp"><span id="timestamp-field"></span></label>
+            </fieldset>
+            <input type="submit" value="Join the Chamber" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <img class="logo" src="images/logo.jpg" alt="Herriman Chamber of Commerce Logo">
+        <div id="contact-info">
+            <p>info@herriman-chamber.org</p>
+            <p>+1 (555) 8910-9099</p>
+        </div>
+        <div id="project-info">
+            <p id="copyRight"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
