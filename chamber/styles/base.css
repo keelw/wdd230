@@ -263,7 +263,7 @@ form label.top, form div {
     font-size: .8rem;
 }
 
-form label.top input, form label.top select {
+form label.top input, form label.top select, textarea {
     -webkit-appearance: none;
     display: block;
     font-size: 1rem;
