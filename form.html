@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Keel - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="This is the course assignment portal 
+        for WDD 230 - Web Frontend Development. From here, all assignments 
+        and projects done for this class by William Keel will be accessible.">
+    <meta name="author" content="William Keel">
+
+    <meta property="og:title" content="William Keel - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="William Keel's homepage for WDD 230.">
+    <meta property="og:image" content="https://www.herriman.org/uploads/files/1437/xlarge/YUN0013.jpg">
+    <meta property="og:url" content="https://keelw.github.io/wdd230/index.html">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!--This is the CDN reference for normalizing css.-->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <img id="me" src="images/personal_headshot.webp" alt="William Keel">
+        <h1>William keel</h1>
+        <div id="mode">
+            ☑️
+        </div>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+           <li>
+                <a class="nav-link" href="index.html">Home</a>
+           </li> 
+           <li>
+                <a class="nav-link" href="chamber/index.html">Chamber</a>
+           </li>
+           <li>
+                <a class="nav-link" href="week01/chamber-site-plan.html">Site Plan</a>
+           </li>
+           <li>
+                <a class="nav-link" href="form.html">Form</a>
+           </li>
+        </ul>
+    </nav>
+    <main id="form">
+        <h1>Rate my site!</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>Account Information</legend>
+                    <label class="top">Username: <input type="text" id="username" name="username" required></label>
+                    <label class="top">Password: <input type="password" id="password1" name="password1" required pattern="[A-Za-z0-9]{8,}" placeholder="At least 8 characters long. No special characters (&#8216;$&#8217;, &#8216;-&#8217;, &#8216; &#8217;, &#8216;&&#8217;, etc.)"></label>
+                    <label class="top">Confirm password:<input type="password" id="password2" name="password2" required pattern="[A-Za-z0-9]{8,}"></label>
+                    <label id="formmessage"></label>
+                    <label class="top">Email address: <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Rating</legend>
+                    <label for="rating">Page Rating</label>
+                    <div id="rangevalue">1</div>
+                    <input type="range" id="range" name="range" min="1" max="10" value="0" step="1" list="rangevalues">
+                    <datalist id="rangevalues">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </datalist>
+            </fieldset>
+            <input type="submit" value="Rate my site!" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p id="copyRight"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/home-page.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
