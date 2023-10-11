@@ -1,0 +1,18 @@
+{
+"familyName":         "Keel",
+"dateMoved":          "10/12/2022",
+"memberCount":        "2",
+"visited":            true,
+"members": [
+    {
+        "name":       "William",
+        "gender":     "M",
+        "birthdate":  "05/15"
+    },
+    {
+        "name":       "Michaela",
+        "gender":     "F",
+        "birthdate":  "05/11"
+    }
+    ]
+}
