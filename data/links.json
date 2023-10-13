@@ -1,0 +1,118 @@
+{
+    "weeks": [
+        {
+            "week":     "Week 1",
+            "links": [
+                {
+                   "url":   "week01/chamber-site-plan.html",
+                   "title": "Chamber Site Plan"
+                },
+                {
+                    "url":  "week01/holygrail.html",
+                    "title": "Holy Grail Example"
+                },
+                {
+                    "url":  "week01/media-query.html",
+                    "title": "Media Query Practice"
+                }
+            ]
+        },
+        {
+            "week":     "Week 2",
+            "links": [
+                {
+                    "url":  "week02/design.html",
+                    "title":"Design Practice"
+                },
+                {
+                    "url":  "index.html",
+                    "title":"Home Page Updates"
+                },
+                {
+                    "url":  "https://codepen.io/keelw/pen/xxmPzQP",
+                    "title":"Responsive Navigation CodePen"
+                },
+                {
+                    "url":  "week02/bom.html",
+                    "title":"BoM DOM Practice"
+                },
+                {
+                    "url":  "chamber/index.html",
+                    "title":"Chamber Home Page"
+                }
+
+            ]
+        },
+        {
+            "week":     "Week 3",
+            "links": [
+                {
+                    "url":  "week03/images/landscape-optimized.webp",
+                    "title":"WebP Practice"
+                },
+                {
+                    "url":  "week03/lazyload.html",
+                    "title":"Lazy Load Practice"
+                },
+                {
+                    "url":  "week03/responsive-images.html",
+                    "title":"Responsive Images"
+                },
+                {
+                    "url":  "week03/bom.html",
+                    "title":"BoM LocalStorage Practice"
+                },
+                {
+                    "url":  "chamber/discover.html",
+                    "title":"Discover Chamber Page"
+                }
+            ]
+        },
+        {
+            "week":     "Week 4",
+            "links": [
+                {
+                    "url":  "https://codepen.io/keelw/pen/XWoPXeK",
+                    "title":"CSS Pseudo-classes CodePen"
+                },
+                {
+                    "url":  "week04/images/w3schools-combinators.jpg",
+                    "title":"W3Schools Combinators Practice"
+                },
+                {
+                    "url":  "week04/tablebuild.html",
+                    "title":"Table Building Excercise"
+                },
+                {
+                    "url":  "week04/form-start/index.html",
+                    "title":"Form Building Excercise"
+                },
+                {
+                    "url":  "form.html",
+                    "title":"Home Page Form"
+                }
+            ]
+        },
+        {
+            "week":     "Week 5",
+            "links": [
+                {
+                    "url":  "https://codepen.io/keelw/pen/MWZxEdg",
+                    "title":"Pseudo-element Practice"
+                },
+                {
+                    "url":  "week05/new-ward-members.json",
+                    "title":"JSON Creation Practice"
+                },
+                {
+                    "url":  "week05/prophets.html",
+                    "title":"Latter-day Prophets Fetch() Practice"
+                },
+                {
+                    "url":  "week05/weather.html",
+                    "title":"Weather Practice"
+                }
+            ]
+        }
+    ]
+}

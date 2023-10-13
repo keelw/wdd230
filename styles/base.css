@@ -216,3 +216,8 @@ footer {
 .map {
     width: 100%;
 }
+
+#weather {
+    display: flex;
+    flex-direction: column;
+}
