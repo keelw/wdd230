@@ -7,19 +7,22 @@ async function getLinks() {
 
     if (response.ok) {
         const data = await response.json();
-        console.log(data);
-        console.log("Got data");
-        displayLinks(data);
+        displayLinks(data.weeks);
     }
 }
 
 const displayLinks = (weeks) => {
-    weeks.forEach((week) => {
-        let row = document.createElement("ul");
-        
-        week.forEach((links) => {
-            console.log(weeks.week[0].links[0]);
-        })
+    // loop through the array of weeks
+    weeks.forEach((week) => { 
+        const listItem = document.createElement("li");
+        linkList.appendChild(listItem);
+        listItem.innerHTML = `${week.week}:`;
+
+        // loop through each link section
+        week.links.forEach((link) => {
+            console.log(link.title);                console.log(link.url);
+             listItem.innerHTML += ` <a href="${link.url}">${link.title}</a> | `;
+            })
     })
 }
 
@@ -48,6 +51,5 @@ const displayProphets = (prophets) => {
         cards.appendChild(card);
     })
 }
-
 
 getLinks();
