@@ -3,7 +3,7 @@
         {
             "name": "Ace Hardware Herriman",
             "address": "13342 S 5600 W Herriman UT, 84096",
-            "phone number": "801-555-1234",
+            "phone": "801-555-1234",
             "url": "https://www.acehardware.com/?utm_source=google&utm_medium=cpc&gclid=CjwKCAjw-KipBhBtEiwAWjgwrMd16ZwquwnuYWpJnDO7GY7lVAz9KdUJStXvhdfCyIFoqd2KySDncxoCQR8QAvD_BwE&gclsrc=aw.ds",
             "img": "images/ace_hardware.jpg",
             "description": "Ace Hardware Logo",
@@ -12,7 +12,7 @@
         {
             "name": "UPS Herriman",
             "address": "5526 13400 S Herriman UT, 84096",
-            "phone number": "801-555-2345",
+            "phone": "801-555-2345",
             "url": "https://locations.theupsstore.com/ut/herriman/5526-west-13400-south?utm_source=Yext&utm_medium=organic&utm_campaign=Listings",
             "img": "images/UPS.jpg",
             "description": "UPS Logo",
@@ -21,7 +21,7 @@
         {
             "name": "Great Clips Herriman",
             "address": "5534 13400 S Herriman UT, 84096",
-            "phone number": "801-555-3456",
+            "phone": "801-555-3456",
             "url": "https://salons.greatclips.com/us/ut/herriman/5534-w-13400-s",
             "img": "images/great_clips.jpg",
             "description": "Great Clips Logo",
@@ -30,7 +30,7 @@
         {
             "name": "Los Aribertos Herriman",
             "address": "13292 S 5600 W Herriman UT, 84096",
-            "phone number": "801-555-4567",
+            "phone": "801-555-4567",
             "url": "https://losaribertos.com/",
             "img": "images/aribertos.jpg",
             "description": "Los Aribertos Logo",
@@ -39,7 +39,7 @@
         {
             "name": "Arctic Circle",
             "address": "13342 S 5600 W Herriman UT, 84096",
-            "phone number": "801-555-5678",
+            "phone": "801-555-5678",
             "url": "https://acburger.com/location/store/120/menu/",
             "img": "images/arctic_circle.jpg",
             "description": "Arctic Circle Logo",
@@ -48,7 +48,7 @@
         {
             "name": "Silver Summit Dental",
             "address": "5734 13400 S Herriman UT, 84096",
-            "phone number": "801-555-6789",
+            "phone": "801-555-6789",
             "url": "https://www.silversummitdental.com/",
             "img": "images/silver_summit.jpg",
             "description": "Silver Summit Dental Logo",
@@ -57,7 +57,7 @@
         {
             "name": "Smith's Herriman",
             "address": "5560 13400 S Herriman UT, 84096",
-            "phone number": "801-555-7890",
+            "phone": "801-555-7890",
             "url": "https://www.smithsfoodanddrug.com/stores/grocery/ut/herriman/5560-w-13400-so-herriman-ut/706/00108",
             "img": "images/smiths.jpg",
             "description": "Smith's Logo",
