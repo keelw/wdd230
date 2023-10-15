@@ -334,3 +334,9 @@ form label.top input:required:valid {
 .button-box-return:hover {
     background-color: #001F3F;
 }
+
+/*-------------Directory Page----------------*/
+.directory_logo {
+    max-width: 250px;
+    padding: 10px;
+}
