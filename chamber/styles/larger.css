@@ -65,7 +65,7 @@
         grid-column: 1/3;
     }
 
-    .card {
+    #side-bar .card {
         grid-column: 1/2;
         margin-top: 30px;
     }
@@ -102,4 +102,15 @@
     .join-main .sidebar {
         grid-column: 1/2;
     }
+
+    .list #directory .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        align-items: center;
+        border: none;
+        margin: 0;
+        width: 100%;
+        border-radius: 0px;
+    }
+    
 }

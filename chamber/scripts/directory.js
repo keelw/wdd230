@@ -1,6 +1,9 @@
 // variables
 const url = "https://keelw.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector("#directory");
+const gridButton = document.querySelector("#grid")
+const listButton = document.querySelector("#list");
+const display = document.querySelector("article");
 
 // get the data from the JSON file
 async function getDirectoryData() {
@@ -8,7 +11,6 @@ async function getDirectoryData() {
 
     if (response.ok) {
         const data = await response.json();
-        console.table(data.businesses);
         displayDirectory(data.businesses);
     }
 }
@@ -33,9 +35,13 @@ const displayDirectory = (businesses) => {
 
         // create other html elements 
         let level = document.createElement("p");
+        level.setAttribute("class", "level");
         let address = document.createElement("p");
+        level.setAttribute("class", "address");
         let phone = document.createElement("p");
+        level.setAttribute("class", "phone");
         let website = document.createElement("p");
+        level.setAttribute("class", "website");
 
         // fill the elements document
         cardHeader.textContent = member.name;
@@ -86,4 +92,16 @@ const displayProphets = (prophets) => {
         
         cards.appendChild(card);
     })
+}
+
+gridButton.addEventListener("click", () => {
+    display.classList.add("grid");
+    display.classList.remove("list");
+});
+
+listButton.addEventListener("click", showList);
+
+function showList() {
+    display.classList.add("list");
+    display.classList.remove("grid");
 }
