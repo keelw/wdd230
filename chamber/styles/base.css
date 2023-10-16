@@ -337,7 +337,7 @@ form label.top input:required:valid {
 
 /*-------------Directory Page----------------*/
 #list_menu {
-    border: 1px solid 001F3F;
+    border: 1px solid #001F3F;
     background-color:#001F3F;
     text-align: center;
     padding: 30px;
