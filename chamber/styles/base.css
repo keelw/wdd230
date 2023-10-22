@@ -411,3 +411,44 @@ form label.top input:required:valid {
 .list #directory .card:nth-child(even) {
     background-color: #e5e5e5;
 }
+
+#weather p {
+ padding-top: 0px;
+ padding-bottom: 0px;
+ padding-left: 15px;
+}
+
+#current-events p {
+    padding: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    background-color: #800020;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+}
+
+#weather #update {
+    font-size: 12px;
+}
+
+#close {
+    color: #001F3F;
+    background-color: #001F3F;
+    padding: 3px 7px 6px;
+    color: white;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+
+}
+
+#close::before {
+    content: "X";
+}

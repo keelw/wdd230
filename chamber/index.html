@@ -30,6 +30,11 @@
         <link rel="icon" href="images/favicon.ico">
     </head>
 <body>
+    <header id="banner" class="hide">
+        <p>Attend our Chamber of Commerce Meet and Greet! For more information see the activities section on our home page!</p>
+        <button id="close">
+        </button>
+    </header>
     <header>
         <img class="logo" src="images/logo.jpg" alt="Herriman Chamber of Commerce Logo">
         <nav>
@@ -51,17 +56,41 @@
                 <a class="join" href="join.html">Join Us</a>
             </div>
         </section>
-        <section class="card" id="current-events">
-            <h2>Events</h2>
-            <p>Events placeholder...</p>
-        </section>
-        <section class="card" id="weather">
-            <h2>Weather</h2>
-            <p>Weather placeholder...</p>
-        </section>
         <section class="card" id="spotlights">
             <h2>Member Spotlights</h2>
-            <p>Member spotlights placeholder...</p>
+            <article class="grid">
+                <section id="directory">
+    
+                </section>
+            </article>
+            </section>
+        <section class="card" id="weather">
+            <h2>Local Weather</h2>
+                <div class="current-weather">
+                    <h4>Current Weather:</h4>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p><span id="current-temp"></span><span id="description"></span></p>
+                </div>
+                <div class="forecast">
+                    <h4>Cooling down this month...</h4>
+                    <p><span id="day1"></span></p>
+                    <p><span id="current-temp"></span><span id="description"></span></p>
+                    <p><span id="day2"></span></p>
+                    <p><span id="current-temp"></span><span id="description"></span></p>
+                    <p><span id="day3"></span></p>
+                    <p><span id="current-temp"></span><span id="description"></span></p>
+                    <p id="update"><span id="last-updated"></span></p>
+                </div>
+        </section>
+        <section class="card" id="current-events">
+            <h2>Events</h2>
+            <h4>Attend our Chamber of Commerce Meet and Greet!</h4>
+            <p>When: Wednesday's at 7pm</p>
+            <p>Where: Herriman City Building - 5355 W Main St, Herriman, UT 84096</p>
+            <p>Why: Come and meet fellow chamber members, network, and be a visible part of the community!</p>
         </section>
     </main>
     <footer>
@@ -76,5 +105,6 @@
         </div>
     </footer>
     <script src="scripts/chamber.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>

@@ -16,47 +16,95 @@ let d = new Date();
 let currentYear = d.getFullYear();
 document.getElementById('copyRight').innerHTML = `&copy ${currentYear} William Keel &#127482;&#127480`;
 
-//Below is the function for the visit-counter function of the page
-
-// Get the stored value of the visits key in local storage
-// if it does not exist, create it and assign 0.
-
-// milliseconds to days constant
-const msToDays = 84600000;
-
 // todays date in ms
-const today = Date.now();
+const nowMS = new Date();
 
-// Get the stored value of the last visit key in local storage
-// if it does not exist, create it and assign it to now.
-let lastVisit = Number(window.localStorage.getItem("lastVisit-ls")) || today;
+//--------------Home Page Banner--------------//
+let banner = document.querySelector("#banner");
+let closeButton = document.querySelector("#close");
+const day = nowMS.getDay();
 
-// Determine when the last visit was... if it didn't happen then display a
-// welcome message. 
-if (lastVisit == today) {
-	visitsMessage.innerHTML = "Welcome! Let us know if you have any questions.";
-	localStorage.setItem("lastVisit-ls", today);
+closeButton.addEventListener('click', () => {
+	banner.setAttribute("class", "hide");
+})
+
+if (nowMS.getDay() == 2 || nowMS.getDay() == 3 || nowMS.getDay() == 4) {
+	banner.setAttribute("class", "show");
 }
 
-// If the last visit was less than a day ago, display a message 
-if ((today - msToDays < lastVisit)) {
-	visitsMessage.innerHTML = "Back so soon! Awesome!";
-	localStorage.setItem("lastVisit-ls", today);
+//-------------Member Spotlights-------------//
+// variables
+const urlSpotlight = "https://keelw.github.io/wdd230/chamber/data/members.json";
+const cards = document.querySelector("#directory");
+const display = document.querySelector("article");
+
+// get the data from the JSON file
+async function getDirectoryData() {
+    response = await fetch(urlSpotlight);
+
+    if (response.ok) {
+        const data = await response.json();
+        displayDirectory(data.businesses);
+    }
 }
 
-// otherwise, display the last time the user visited. 
-else {
-	let lastInDays = Math.round((today - lastVisit) / msToDays);
-
-	if (lastInDays == 1) {
-		visitsMessage.innerHTML = `You last visited ${lastInDays} day ago.`;
+// display the data
+const displayDirectory = (businesses) => {
+	let i = 0;
+	while (i < 2) {
+		randomMemberNumber = parseInt(Math.random() * 7);
+		
+		if (businesses[randomMemberNumber].membership == "Gold" || businesses[randomMemberNumber].membership == "Silver") {
+			GetBusinessCard(businesses[randomMemberNumber]);
+			i++;
+		}
 	}
-
-	else {
-		visitsMessage.innerHTML = `You last visited ${lastInDays} days ago.`;
-	}
-
-	localStorage.setItem("lastVisit-ls", today);	
 }
 
-timestamp = d;
+function GetBusinessCard(member) {
+	// get the variables declared/initialized
+	
+	// create the card 
+	let card = document.createElement("section");
+	card.setAttribute("class", "card");
+	
+	// create the header
+	let cardHeader = document.createElement("h2");
+	
+	// create the logo
+	let logo = document.createElement("img");
+	logo.setAttribute("class", "directory_logo");
+	logo.setAttribute("src", member.img);
+	logo.setAttribute("alt", member.description)
+
+	// create other html elements 
+	let level = document.createElement("p");
+	level.setAttribute("class", "level");
+	let address = document.createElement("p");
+	level.setAttribute("class", "address");
+	let phone = document.createElement("p");
+	level.setAttribute("class", "phone");
+	let website = document.createElement("p");
+	level.setAttribute("class", "website");
+
+	// fill the elements document
+	cardHeader.textContent = member.name;
+	level.textContent = `Membership Level: ${member.membership}`;
+	address.textContent = member.address;
+	phone.textContent = member.phone;
+	website.innerHTML = `<a href="${member.url}">${member.name} Website</a>`;
+
+	// fill the cards
+	card.appendChild(cardHeader);
+	card.appendChild(logo);
+	card.appendChild(level);
+	card.appendChild(address);
+	card.appendChild(phone);
+	card.appendChild(website);
+
+	// add the whole card to the document
+	cards.appendChild(card);
+}
+
+getDirectoryData();
+
