@@ -40,5 +40,3 @@ else {
 
 	localStorage.setItem("lastVisit-ls", today);	
 }
-
-timestamp = d;
